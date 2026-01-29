@@ -130,7 +130,6 @@
       display:inline-block;
       padding: 0 10px;
       border-radius: 12px;
-      background: rgba(255,77,109,.14);
       border: 1px dashed rgba(255,77,109,.45);
     }
 
@@ -318,13 +317,12 @@
         <div>
           <h1>💘 Valentine Request</h1>
           <p class="subtitle">
-            A tiny interactive website that asks one very important question.
-            (Made with love + a little bit of JavaScript.)
+            I will commit grand larsony if you say no
           </p>
         </div>
 
         <div class="pillbar">
-          <div class="pill"><span class="dot"></span> Cute Mode: <strong id="modeLabel">ON</strong></div>
+          <div class="pill"><span class="dot"></span> Mode: <strong id="modeLabel">ON</strong></div>
           <div class="pill">
             Music:
             <button id="musicBtn" aria-label="Toggle music">Off</button>
@@ -549,12 +547,12 @@
     noBtn.style.top = y + "px";
 
     const lines = [
-      "Not that one 😅",
-      "Hehe nope 🙈",
-      "Try again 😇",
-      "I’m shy 🫣",
+      "Dang fr?",
+      "Is this website bunk or nah",
+      "Wowwww",
+      "Dwight D. Eisenhower",
       "You sure? 😭",
-      "C’monnn 😭💘"
+      "C’monnn"
     ];
     $("hint").textContent = lines[Math.min(lines.length - 1, Math.floor(state.noMoves / 2))];
   }
