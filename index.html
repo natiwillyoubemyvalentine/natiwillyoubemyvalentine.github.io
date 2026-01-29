@@ -318,19 +318,10 @@
         <div>
           <h1>💘 Valentine Request</h1>
           <p class="subtitle">
-            A tiny interactive website that asks one very important question.
-            (Made with love + a little bit of JavaScript.)
+            I will commit grand larsony if you say no.
           </p>
         </div>
 
-        <div class="pillbar">
-          <div class="pill"><span class="dot"></span> Cute Mode: <strong id="modeLabel">ON</strong></div>
-          <div class="pill">
-            Music:
-            <button id="musicBtn" aria-label="Toggle music">Off</button>
-          </div>
-          
-        </div>
       </div>
 
       <div class="grid">
@@ -392,7 +383,6 @@
   </audio>
 
 <script>
-  // ---------- Personalization (edit these defaults) ----------
   const DEFAULTS = {
     herName: "Nati",
     planLink: "https://www.wildwasabisignature.com/", // change to a date plan link, a note, or anything
@@ -549,12 +539,12 @@
     noBtn.style.top = y + "px";
 
     const lines = [
-      "Not that one 😅",
-      "Hehe nope 🙈",
-      "Try again 😇",
-      "I’m shy 🫣",
+      "Not that one ",
+      "are you fr rn?",
+      "hella burnt",
+      "Is this website bunk or nah",
       "You sure? 😭",
-      "C’monnn 😭💘"
+      "I will jump"
     ];
     $("hint").textContent = lines[Math.min(lines.length - 1, Math.floor(state.noMoves / 2))];
   }
@@ -652,7 +642,7 @@
       state.cuteMode = !state.cuteMode;
       $("modeLabel").textContent = state.cuteMode ? "ON" : "OFF";
       $("hint").textContent = state.cuteMode
-        ? "Tip: if you try “No”… it might get shy."
+        ? "if you try “No”… it might get shy."
         : "Cute Mode OFF: “No” will behave normally.";
       toast(state.cuteMode ? "Cute Mode ON 💖" : "Cute Mode OFF 🧠");
       // Reset the No button position when turning off
